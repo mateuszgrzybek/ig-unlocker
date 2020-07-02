@@ -1,0 +1,15 @@
+{
+    "name": "IG Unlocker",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Browse IG without logging in",
+    "icons": {
+        "32": "lock-icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.instagram.com/*"],
+            "js": ["igUnlocker.js"]
+        }
+    ]
+}
